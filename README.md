@@ -13,8 +13,8 @@ Note: The code assumes that all the data is present in the UCI folder in the cur
 The output of the 5th step is called `tidyDataSet.txt`, and uploaded in the course project's GitHub repo.
 
 ### `run_analysis.R` - Working in Five parts
-1. Merges the training and test sets to create single data set
-2. Trims the data set for mean and standard deviation values for each measurement. It also renames the columns to meaningful headers.
-3. Combined desciptive activity names in the data set
-4. Combined subject and activity with data values with desciptive variable names in the data set
-5. Created second tidy Data Set -  with the average of each variable
+1.  Merges the training and test sets to create single data set
+2.  Trims the data set for mean and standard deviation values for each measurement. It also renames the columns to meaningful headers.
+3.  Combined desciptive activity names in the data set
+4.  Combined subject and activity with data values with desciptive variable names in the data set
+5.  Created second tidy Data Set -  with the average of each variable
