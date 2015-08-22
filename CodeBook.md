@@ -1,6 +1,6 @@
 # CodeBook.md 
 
-## TRAINING 
+## Data variables used in the script 
 ### Training Data Set variables 
   * train_Set: Data Set with x_data for training values loaded  
   * train_Label: Data Set with y_data for training activity loaded with header = 'activityLabel' 
