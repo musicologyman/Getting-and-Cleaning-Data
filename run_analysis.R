@@ -46,7 +46,7 @@ setNames <- sub(" +$", "", setNames)
 colnames(x_data) <- make.names( setNames, unique = TRUE )
 
 # Start to process lib library(dplyr)
-# library(dplyr)
+library(dplyr)
 tbl_x_Data <- dplyr::tbl_df(x_data)
 # select only conlumns with mean and std dev
 tbl_x_MeanStd <- tbl_x_Data %>%
@@ -73,6 +73,7 @@ merged_data_set <- cbind(subject_data, y_data, tbl_x_MeanStd)
 # for each activity and each subject
 ###############################################################################
 merged_data_set.melted <- melt(merged_data_set, id = c("subject", "activityLabel"))
-#Calculate mean for each of the subject and activity
+# Calculate mean for each of the subject and activity
 merged_data_set.mean <- dcast(merged_data_set.melted, subject + activityLabel ~ variable, mean)
+# Final ouput of the script - output to file called: tidyDataSet.txt
 write.table(merged_data_set.mean, "tidyDataSet.txt", row.names = FALSE, quote = FALSE)
