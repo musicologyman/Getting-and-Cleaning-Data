@@ -26,4 +26,6 @@
   * merged_data_set: Merged columns for subject_data, activity data and x-data table for Mean and Std deviation 
   * merged_data_set.melted: Melted data in table merged_data_set using variables - "subject", "activityLabel" 
   * **merged_data_set.mean**: Using dcast calculated mean for all variables using data table merged_data_set.melted 
+  * **tidyDataSet.txt**: The final output from run_analysis.R (write.table run on merged_data_set.mean)
+
     
